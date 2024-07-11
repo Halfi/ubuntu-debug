@@ -1,5 +1,5 @@
 FROM ubuntu
 
-RUN apt update && \
-    apt install curl wget nano ping mtr telnet traceroute && \
+RUN apt update -y && \
+    apt install -y curl wget nano iputils-ping mtr telnet traceroute && \
     apt-get clean
