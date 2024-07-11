@@ -51,7 +51,7 @@ jobs:
 
       - name: Build and push Docker image
         env:
-          BUILDX_VERSIONS: linux/amd64,linux/arm64,linux/arm/v8,linux/arm/v7,linux/arm/v6
+          BUILDX_VERSIONS: linux/amd64
         timeout-minutes: 25
         id: docker_build
         uses: docker/build-push-action@v5
